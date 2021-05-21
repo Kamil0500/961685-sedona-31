@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+           <li><a href="index.html">Информация</a></li>
+           <li><a href="#">Фото и видео</a></li>
+           <li><a href="#">Карта штата</a></li>
+           <li> <a href="#">Гостиницы</a></li>
+          </ul>
+        </nav>
+        <a><img src="img/logo.svg" width="138" height="70" alt="Sedona"></a>
+      </header>
+
+      <section>
+          <h1 class="visually-hidden">Форма фильтра поиска гостиницы</h1>
+          <form action="#" method="POST">
+              <div>
+                <h2>Инфраструктура:</h2>
+                <input type="checkbox" name="swim" id="checkbox_1" checked>
+                <label for="checkbox_1">Бассейн</label> 
+                <input type="checkbox" name="parking" id="checkbox_2">
+                <label for="checkbox_2">Парковка</label>
+                <input type="checkbox" name="wifi" id="checkbox_3">
+                <label for="checkbox_3">Wi-Fi</label>
+                </label>
+              </div>
+              <div>
+                <h2>Тип жилья:</h2>
+                <input type="checkbox" name="hotel" id="checkbox_4" checked>
+                <label for="checkbox_4">Гостиница</label>
+                <input type="checkbox" name="motel" id="checkbox_5" checked>
+                <label for="checkbox_5">Мотель</label>
+                <input type="checkbox" name="apartment" id="checkbox_6" checked>
+                <label for="checkbox_6">Апартаменты</label>
+              </div>
+              <div>
+                <h2>Стоимость в сутки, ₽:</h2>
+                <label for="from">От</label>
+                <input type="text" value="0" name="from" id="from">
+                <label for="before">До</label>
+                <input type="text" value="3000" name="before" id="before">
+              </div>
+              <div>
+                  <label for="range">
+                      <input type="range" name="range" id="range" min="0" max="3000" value="0,3000">
+                  </label>
+              </div>
+              <button type="submit">Показать</button>
+          </form>
+      </section>
+
+      <section>
+          <h2 class="visually-hidden">Информация о гостиницах</h2>
+
+          <div>
+              <span>Найдено: 3</span>
+              <ul>
+                  <li>
+                      <a href="#">Сортировка:</a>
+                  </li>
+                  <li>
+                      <a href="#">По цене</a>
+                  </li>
+                  <li>
+                      <a href="#">По типу</a>
+                  </li>
+                  <li>
+                      <a href="#">По рейтингу</a>
+                  </li>
+              </ul>
+              <button type="submit">up</button>
+              <button type="submit">down</button>
+          </div>
+
+          <ul>
+              <li>
+                <img src="https://via.placeholder.com/150x100" alt="">
+                <p>Amara Resort & Spa</p>
+                <span>Гостиница</span>
+                <span>От 4000 ₽</span>
+                <a href="#">Подробнее</a>
+                <button type="submit">Забронировать</button>
+                <span>Рейтинг: 8,5</span>
+              </li>
+              <li>
+                <img src="https://via.placeholder.com/150x100" alt="">
+                <p>Desert Quail Inn</p>
+                <span>Мотель</span>
+                <span>От 3000 ₽</span>
+                <a href="#">Подробнее</a>
+                <button type="submit">Забронировать</button>
+                <span>Рейтинг: 8,9</span>
+              </li>
+              <li>
+                <img src="https://via.placeholder.com/150x100" alt="">
+                <p>Villas at Poco Diablo</p>
+                <span>Апартаменты</span>
+                <span>От 2000 ₽</span>
+                <a href="#">Подробнее</a>
+                <button type="submit">Забронировать</button>
+                <span>Рейтинг: 9,2</span> 
+              </li>
+          </ul>
+
+      </section>
+
+      <footer>
+        <div>
+           <span>#visitSEDONA</span>
+           <a href="tel:+78005558628">+7 800 555-86-28</a>
+        </div>
+ 
+          <ul>
+           <li><a href="#">twitter</a></li>
+           <li><a href="#">facebook</a></li>
+           <li><a href="#">youtube</a></li>
+          </ul>
+ 
+          <a href="#">
+            <span>Website by</span>
+          </a>
+      </footer>
+</body>
+</html>

@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -13,19 +15,19 @@
          <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          <li><a><img src="img/logo.svg" width="138" height="70" alt="Sedona"></a></li>
           <li><a href="#">Карта штата</a></li>
-          <li> <a href="#">Гостиницы</a></li>
+          <li> <a href="catalog.html">Гостиницы</a></li>
          </ul>
        </nav>
+       <a>
+        <img src="/img/logo.svg" width="138" height="70" alt="Sedona">
+       </a>
      </header>
 
      <main>
        <section>
             <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-            <img src="/img/bg.png" width="1200" height="509" alt="Добро пожаловать в Седону">
-            <p>Wellcome to the gorgeouse</p>
-            <p>Sedona "Because the Grand Canyon sucks!"</p>
+            <img src="https://via.placeholder.com/150x100" alt="">
        </section>
 
        <section>
@@ -36,54 +38,51 @@
           
             <div>
               <div>
-                <p>Настоящий городок</p>
-                <p>— №1 —</p>
+                <h3>Настоящий городок</h3>
+                <span>— №1 —</span>
                 <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-                <img src="/img/foto.png" width="800" height="256" alt="Настоящий городок Седона">
+              <img src="/img/foto.png" width="800" height="256" alt="городок Седона">
             </div>
 
             <ul>
               <li> 
-                <img src="/img/icon-1.svg" width="75" height="72" alt="Жильё">
-                <p>Жильё</p>
+                <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li>
-                <img src="/img/icon-2.svg" width="75" height="70" alt="Еда">
-                <p>Еда</p>
+                <h3>Еда</h3>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li>
-                <img src="/img/icon-3.svg" width="64" height="77" alt="Сувениры">
-                <p>Сувениры</p>
+                <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
 
             <div>
-              <img src="/img/foto_2.png" alt="Там есть Мост дьявола">
+              <img src="/img/foto_2.png" width="800" height="256" alt="Мост дьявола">
               <div>
-                <p>Там естьМост дьявола</p>
-                <p>— №2 —</p>
+                <h3>Там есть Мост дьявола</h3>
+                <span>— №2 —</span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
             </div>
 
             <ul>
               <li>
-                <p>небольшая площадь</p>
-                <p>— №3 —</p>
+                <h3>небольшая площадь</h3>
+                <span>— №3 —</span>
                 <p>все достопримечательности находятся очень близко</p>
               </li>
               <li>
-                <p>красивая дорога</p>
-                <p>— №4 —</p>
+                <h3>красивая дорога</h3>
+                <span>— №4 —</span>
                 <p>ехать в седону из лас-вегаса совсем не скучно!</p>
               </li>
               <li>
-                <p>мало туристов</p>
-                <p>— №5 —</p>
+                <h3>мало туристов</h3>
+                <span>— №5 —</span>
                 <p>большинство едет в гранд каньон и толпится там</p>
               </li>
             </ul>
@@ -91,26 +90,27 @@
 
        <section>
          <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-         <h1>Заинтересовались?</h1>
+         <span>Заинтересовались?</span>
          <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-         <p><a href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a></p>
-         <img src="/img/map.png" width="1199" height="594" alt="Карта Sedona">
+         <a href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
        </section>
      </main>
 
      <footer>
        <div>
-          <p>#visitSEDONA</p>
+          <span>#visitSEDONA</span>
           <a href="tel:+78005558628">+7 800 555-86-28</a>
        </div>
+
          <ul>
           <li><a href="#">twitter</a></li>
           <li><a href="#">facebook</a></li>
           <li><a href="#">youtube</a></li>
          </ul>
-        <div>
-          <p>Website by <a href="#">HTML Academy</a></p>
-        </div>
+
+         <a href="#">
+           <span>Website by</span>
+         </a>
      </footer>
   </body>
 </html>
