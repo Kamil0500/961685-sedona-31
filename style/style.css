@@ -1,27 +1,43 @@
 :root {
   --basic-black: #000000;
-  --basic-lightblue: #81b3d2;
+  --basic-light-blue: #81b3d2;
   --basic-blue: #669EC0;
-  --basic-darkblue: #5496BD;
+  --basic-dark-blue: #5496BD;
   --basic-neutral: #cacaca;
   --basic-white: #ffffff;
-  --basic-lightgrey: #f2f2f2;
-  --basic-lightbrown: #766357;
-  --basic-darkbrown: #503E33;
-  --basic-browm: #604E43;
+  --basic-light-grey: #f2f2f2;
+  --basic-light-brown: #766357;
+  --basic-dark-brown: #503E33;
+  --basic-brown: #604E43;
   --basic-light: #EEEEEE;
-  --basic-darkgreen: #333333;
+  --basic-dark-green: #333333;
+  --basic-light-02: rgba(0, 1, 1, 0.2);
+  --body-fonts: "PT Sans";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .page-body {
   min-width: 1200px;
   padding: 0;
   margin: 0;
-  font-family: "PT Sans", "Open Sans", serif;
+  font-family: var(--body-fonts);
   font-size: 14px;
   line-height: 21px;
-  font-weight: normal;
   font-weight: 400;
+  font-weight: normal;
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--basic-lightgrey);
@@ -29,7 +45,7 @@
 
 .container {
   background-color: var(--basic-white);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px var(--basic-light-02);
 }
 
 a {
@@ -41,41 +57,33 @@ img {
   height: auto;
 }
 
-li {
-  list-style: none;
-}
-
 .header-nav-list {
   line-height: 26px;
   font-weight: bold;
 }
 
-.header-nav-list a {
+.header-nav-link {
   color: var(--basic-black);
 }
 
-.header-nav-list a:hover {
-  color: var(--basic-lightblue);
+.header-nav-link:hover {
+  color: var(--basic-light-blue);
 }
 
-.header-nav-list a:active {
+.header-nav-link:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
-.header-nav-list a:focus {
-  color: var(--basic-lightbrown);
+.header-nav-link:focus {
+  color: var(--basic-light-brown);
 }
 
 .main-banner {
   background-color: var(--basic-white);
-  background-image: url(/img/bg.png);
+  background-image: url("../img/bg.png");
   background-repeat: no-repeat;
   text-align: center;
-}
-
-.visually-hidden {
-  display: none;
 }
 
 .main-features-slogan {
@@ -84,9 +92,9 @@ li {
 
 .slogan {
   font-weight: bold;
+  font-style: normal;
   font-size: 21px;
   line-height: 26px;
-  font-style: normal;
 }
 
 .slogan-text {
@@ -94,25 +102,20 @@ li {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  color: var(--basic-darkgreen);
+  color: var(--basic-dark-green);
 }
 
-.main-features h3 {
+.title {
   font-weight: bold;
+  font-style: normal;
   font-size: 21px;
   line-height: 21px;
-  font-style: normal;
 }
 
 .main-features-block {
-  background-color: var(--basic-lightblue);
-  text-align: center;
+  background-color: var(--basic-light-blue);
   color: var(--basic-white);
-}
-
-.main-features-1 h3,
-.main-features-2 h3 {
-  color: #FFFFFF;
+  text-align: center;
 }
 
 .main-features-list-2 {
@@ -120,7 +123,7 @@ li {
 }
 
 .text {
-  color: var(--basic-darkgreen);
+  color: var(--basic-dark-green);
 }
 
 .form-search {
@@ -131,20 +134,21 @@ li {
   text-align: center;
 }
 
-.form-search a {
-  background-color: var(--basic-lightbrown);
+.form-search-link {
+  background-color: var(--basic-light-brown);
   color: var(--basic-white);
   font-weight: bold;
+  font-style: normal;
   font-size: 21px;
   line-height: 26px;
-  font-style: normal;
 }
 
-.form-search a:hover {
-  background-color: var(--basic-browm);
+.form-search-link:hover {
+  background-color: var(--basic-brown);
 }
-.form-search a:active {
-  background-color: var(--basic-darkbrown);
+
+.form-search-link:active {
+  background-color: var(--basic-dark-brown);
   color: var(--basic-white);
 }
 
@@ -153,30 +157,27 @@ li {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-style: normal;
 }
 
-.phone a {
+.phone-link {
   color: var(--basic-black);
 }
 
-.phone a:hover {
+.phone-link:hover {
   text-decoration: underline;
 }
 
-
-.footer-social a {
-  background-color: var(--basic-lightblue);
-  color: var(--basic-white);
+.social-link {
+  color: var(--basic-light-blue);
 }
 
-.social-item a:hover {
-  background-color: var(--basic-blue);
+.social-link:hover {
+  color: var(--basic-blue);
 }
 
-.social-item a:active {
-  background-color: var(--basic-darkblue);
-  mix-blend-mode: normal;
+.social-link:active {
+  color: var(--basic-dark-blue);
+  opacity: 0.3;
 }
 
 .html-academy {
@@ -187,11 +188,15 @@ li {
   color: var(--basic-black);
 }
 
-.html-academy svg:hover {
-  background-color: var(--basic-blue);
-  color: var(--basic-blue);
+.html-academy-svg {
+  fill: var(--basic-black);
 }
 
-.html-academy svg:active {
+.html-academy-svg:hover {
+  fill: var(--basic-blue);
+}
+
+.html-academy-svg:active {
+  fill: var(--basic-black);
   opacity: 0.3;
 }
