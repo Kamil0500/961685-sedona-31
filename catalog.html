@@ -36,17 +36,17 @@
         <h2 class="visually-hidden">форма поиска</h2>
 
         <div>
-          <h3 class="infrastructure-title">Инфраструктура:</h3>
-          <ul class="infrastructure-list">
-            <li class="infrastructure-item">
+          <h3 class="form-title">Инфраструктура:</h3>
+          <ul class="form-list">
+            <li class="form-item">
               <input type="checkbox" name="infastructur" value="swim" id="checkbox_1" checked>
               <label for="checkbox_1">Бассейн</label>
             </li>
-            <li class="infrastructure-item">
+            <li class="form-item">
               <input type="checkbox" name="infastructur" value="parking" id="checkbox_2">
               <label for="checkbox_2">Парковка</label>
             </li>
-            <li class="infrastructure-item">
+            <li class="form-item">
               <input type="checkbox" name="infastructur" value="wifi" id="checkbox_3">
               <label for="checkbox_3">Wi-Fi</label>
             </li>
@@ -54,43 +54,44 @@
         </div>
 
         <div>
-          <h3 class="type-housing-title">Тип жилья:</h3>
-          <ul class="type-housing-list">
-            <li class="type-housing-item">
+          <h3 class="form-title">Тип жилья:</h3>
+          <ul class="form-list">
+            <li class="form-item">
               <input type="checkbox" name="type_of_housing" value="hotel" id="checkbox_4" checked>
               <label for="checkbox_4">Гостиница</label>
             </li>
-            <li class="type-housing-item">
+            <li class="form-item">
               <input type="checkbox" name="type_of_housing" value="motel" id="checkbox_5" checked>
               <label for="checkbox_5">Мотель</label>
             </li>
-            <li class="type-housing-item">
+            <li class="form-item">
               <input type="checkbox" name="type_of_housing" value="apartament" id="checkbox_6" checked>
               <label for="checkbox_6">Апартаменты</label>
             </li>
           </ul>
         </div>
 
+
         <div>
-          <div>
-            <h3 class="cost">Стоимость в сутки (Р):</h3>
-            <label class="cost-from">От
+          <h3 class="cost">Стоимость в сутки (Р):</h3>
+          <div class="block-cost">
+            <label class="cost-label">От
               <input class="cost-input" type="text" value="0" name="from">
             </label>
-            <label class="cost-before">До
+            <label class="cost-label">До
               <input class="cost-input" type="text" value="3000" name="before">
             </label>
           </div>
-
           <div>
             <!--range-->
           </div>
-
-          <button class="show" type="submit">Показать</button>
+          <div class="show-btn">
+            <button class="show" type="submit">Показать</button>
+          </div>
         </div>
       </form>
 
-      <div>
+      <div class="block-found">
         <span class="found">Найдено: 3</span>
         <ul class="found-list">
           <li class="found-item">
@@ -109,13 +110,13 @@
 
         <ul>
           <li>
-            <a href="#"><svg class="svg-up" width="11" height="10" viewBox="0 0 11 10" fill="none"
+            <a href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 0L0 10H11L5.5 0Z" />
               </svg></a>
           </li>
           <li>
-            <a href="#"><svg class="svg-down" width="11" height="10" viewBox="0 0 11 10" fill="none"
+            <a href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11" />
               </svg></a>

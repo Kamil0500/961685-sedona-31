@@ -41,10 +41,12 @@ html {
   font-weight: normal;
   text-transform: uppercase;
   color: var(--basic-black);
-  background-color: var(--basic-lightgrey);
+  background-color: var(--basic-light-grey);
 }
 
 .container {
+  width: 1200px;
+  margin: 0 auto;
   background-color: var(--basic-white);
   box-shadow: 0px 5px 15px var(--basic-light-02);
 }
@@ -211,21 +213,26 @@ img {
 
 .form-catalog {
   display: flex;
+  justify-content: space-around;
   background-image: url("../img/catalog/bg_catalog.png");
   background-repeat: no-repeat;
 }
 
-.infrastructure-item,
-.type-housing-item {
-  color: var(--basic-white);
-}
-
-.infrastructure-title,
-.type-housing-title {
+.form-title {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
+  color: var(--basic-white);
+}
+
+.form-item {
+  color: var(--basic-white);
+}
+
+.block-cost {
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
   color: var(--basic-white);
 }
 
@@ -237,17 +244,15 @@ img {
   color: var(--basic-white);
 }
 
-.cost-from,
-.cost-before {
-  border: 2px solid var(--basic-white);
-  border-radius: 2px;
-  color: var(--basic-white);
-}
-
 .cost-input {
   background: none;
   border: none;
   color: var(--basic-white);
+}
+
+.show-btn {
+  display: flex;
+  justify-content: center;
 }
 
 .show {
@@ -256,11 +261,18 @@ img {
   background: none;
   color: var(--basic-white);
   text-transform: uppercase;
+  margin: 55px 0 32px 0;
+  padding: 7px 35px 8px 35px;
 }
 
 .show:hover {
   background: var(--basic-white);
   color: var(--basic-black);
+}
+
+.block-found {
+  display: flex;
+  padding: 30px 40px 30px 73px;
 }
 
 .found {
@@ -291,18 +303,15 @@ img {
   border: none;
 }
 
-.svg-up,
-.svg-down {
+.svg-link {
   fill: var(--basic-neutral);
 }
 
-.svg-up:hover,
-.svg-down:hover {
+.svg-link:hover {
   fill: var(--basic-black);
 }
 
-.svg-up:active,
-.svg-down:active {
+.svg-link:active {
   fill: var(--basic-light-blue);
 }
 
@@ -373,4 +382,5 @@ img {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-dull-gray);
+  background-color: var(--basic-light-grey);
 }
