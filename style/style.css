@@ -1,9 +1,11 @@
 :root {
   --basic-black: #000000;
+  --basic-black-03: rgba(0, 0, 0, 0.3);
   --basic-light-blue: #81b3d2;
   --basic-blue: #669EC0;
   --basic-dark-blue: #5496BD;
   --basic-neutral: #cacaca;
+  --basic-white-03: rgba(255, 255, 255, 0.3);
   --basic-white: #ffffff;
   --basic-light-grey: #f2f2f2;
   --basic-light-brown: #766357;
@@ -13,7 +15,7 @@
   --basic-dark-green: #333333;
   --basic-dull-gray: #666666;
   --basic-light-02: rgba(0, 1, 1, 0.2);
-  --body-fonts: "PT Sans";
+  --body-fonts: "PT Sans", "Open Sans";
 }
 
 *,
@@ -82,6 +84,10 @@ img {
   color: var(--basic-light-brown);
 }
 
+.header-nav-item {
+  list-style: none;
+}
+
 .main-banner {
   background-color: var(--basic-white);
   background-image: url("../img/bg.png");
@@ -91,6 +97,10 @@ img {
 
 .main-features-slogan {
   text-align: center;
+}
+
+.main-features-item {
+  list-style: none;
 }
 
 .slogan {
@@ -125,6 +135,10 @@ img {
   background-color: var(--basic-light);
 }
 
+.main-features-item-2 {
+  list-style: none;
+}
+
 .text {
   color: var(--basic-dark-green);
 }
@@ -135,6 +149,12 @@ img {
   line-height: 24px;
   font-style: normal;
   text-align: center;
+}
+
+.form-search-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-dark-green);
 }
 
 .form-search-link {
@@ -152,7 +172,7 @@ img {
 
 .form-search-link:active {
   background-color: var(--basic-dark-brown);
-  color: var(--basic-white);
+  color: var(--basic-white-03);
 }
 
 .phone {
@@ -167,22 +187,30 @@ img {
 }
 
 .phone-link:hover {
-  text-decoration: underline;
+  color: var(--basic-light-blue);
 }
 
-.social-link {
-  color: var(--basic-light-blue);
+.phone-link:active {
+  color: var(--basic-black-03);
+}
+
+.social-item {
+  list-style: none;
+}
+
+.social-svg {
+  fill: var(--basic-white);
   background-color: var(--basic-light-blue);
 }
 
-.social-link:hover {
+.social-svg:hover {
   background-color: var(--basic-blue);
 }
 
-.social-link:active {
+.social-svg:active {
+  fill: var(--basic-white-03);
   background-color: var(--basic-dark-blue);
 }
-
 
 .html-academy {
   font-style: normal;
@@ -211,14 +239,14 @@ img {
   color: var(--basic-light-brown);
 }
 
-.form-catalog {
+.catalog-form {
   display: flex;
   justify-content: space-around;
   background-image: url("../img/catalog/bg_catalog.png");
   background-repeat: no-repeat;
 }
 
-.form-title {
+.catalog-form-title {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -226,7 +254,8 @@ img {
   color: var(--basic-white);
 }
 
-.form-item {
+.catalog-form-item {
+  list-style: none;
   color: var(--basic-white);
 }
 
@@ -283,6 +312,10 @@ img {
   color: var(--basic-black);
 }
 
+.found-item {
+  list-style: none;
+}
+
 .found-link {
   font-style: normal;
   font-weight: normal;
@@ -303,6 +336,10 @@ img {
   border: none;
 }
 
+.catalog-svg-item {
+  list-style: none;
+}
+
 .svg-link {
   fill: var(--basic-neutral);
 }
@@ -313,6 +350,10 @@ img {
 
 .svg-link:active {
   fill: var(--basic-light-blue);
+}
+
+.hotel-item {
+  list-style: none;
 }
 
 .hotel-link-title {
@@ -350,12 +391,9 @@ img {
   background-color: var(--basic-blue);
 }
 
-.hotel-details-text:active {
-  opacity: 0.3;
-}
-
 .hotel-details:active {
   background-color: var(--basic-dark-blue);
+  color: var(--basic-white-03);
 }
 
 .hotel-reserve {
@@ -370,11 +408,9 @@ img {
 
 .hotel-reserve:active {
   background-color: var(--basic-dark-brown);
+  color: var(--basic-white-03);
 }
 
-.hotel-reserve-text:active {
-  opacity: 0.3;
-}
 
 .rating {
   font-style: normal;

@@ -32,21 +32,21 @@
     <section>
       <h1 class="visually-hidden">Поиск гостиницы</h1>
 
-      <form class="form-catalog" action="#" method="POST">
+      <form class="catalog-form" action="#" method="POST">
         <h2 class="visually-hidden">форма поиска</h2>
 
         <div>
-          <h3 class="form-title">Инфраструктура:</h3>
-          <ul class="form-list">
-            <li class="form-item">
+          <h3 class="catalog-form-title">Инфраструктура:</h3>
+          <ul class="catalog-form-list">
+            <li class="catalog-form-item">
               <input type="checkbox" name="infastructur" value="swim" id="checkbox_1" checked>
               <label for="checkbox_1">Бассейн</label>
             </li>
-            <li class="form-item">
+            <li class="catalog-form-item">
               <input type="checkbox" name="infastructur" value="parking" id="checkbox_2">
               <label for="checkbox_2">Парковка</label>
             </li>
-            <li class="form-item">
+            <li class="catalog-form-item">
               <input type="checkbox" name="infastructur" value="wifi" id="checkbox_3">
               <label for="checkbox_3">Wi-Fi</label>
             </li>
@@ -54,17 +54,17 @@
         </div>
 
         <div>
-          <h3 class="form-title">Тип жилья:</h3>
-          <ul class="form-list">
-            <li class="form-item">
+          <h3 class="catalog-form-title">Тип жилья:</h3>
+          <ul class="catalog-form-list">
+            <li class="catalog-form-item">
               <input type="checkbox" name="type_of_housing" value="hotel" id="checkbox_4" checked>
               <label for="checkbox_4">Гостиница</label>
             </li>
-            <li class="form-item">
+            <li class="catalog-form-item">
               <input type="checkbox" name="type_of_housing" value="motel" id="checkbox_5" checked>
               <label for="checkbox_5">Мотель</label>
             </li>
-            <li class="form-item">
+            <li class="catalog-form-item">
               <input type="checkbox" name="type_of_housing" value="apartament" id="checkbox_6" checked>
               <label for="checkbox_6">Апартаменты</label>
             </li>
@@ -108,24 +108,24 @@
           </li>
         </ul>
 
-        <ul>
-          <li>
-            <a href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+        <ul class="catalog-svg-list">
+          <li class="catalog-svg-item">
+            <a class="catalog-svg-link" href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 0L0 10H11L5.5 0Z" />
               </svg></a>
           </li>
-          <li>
-            <a href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+          <li class="catalog-svg-item">
+            <a class="catalog-svg-link" href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11" />
               </svg></a>
           </li>
         </ul>
       </div>
 
-      <ul>
-        <li>
+      <ul class="hotel-list">
+        <li class="hotel-item">
           <img src="./img/catalog/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
           <div>
             <h3 class="hotel-title"><a class="hotel-link-title" href="#">Amara Resort & Spa</a></h3>
@@ -134,8 +134,8 @@
               <span class="hotel-text">От 4000 ₽</span>
             </div>
             <div class="hotel-link">
-              <a class="hotel-details" href="#"><span class="hotel-details-text">Подробнее</span></a>
-              <a class="hotel-reserve" href="#"><span class="hotel-reserve-text">Забронировать</span></a>
+              <a class="hotel-details" href="#">Подробнее</a>
+              <a class="hotel-reserve" href="#">Забронировать</a>
             </div>
           </div>
           <div>
@@ -143,7 +143,7 @@
             <span class="rating">Рейтинг: 8,5</span>
           </div>
         </li>
-        <li>
+        <li class="hotel-item">
           <img src="./img/catalog/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
           <div>
             <h3 class="hotel-title"><a class="hotel-link-title" href="#">Desert Quail Inn</a></h3>
@@ -152,8 +152,8 @@
               <span class="hotel-text">От 3000 ₽</span>
             </div>
             <div class="hotel-link">
-              <a class="hotel-details" href="#"><span class="hotel-details-text">Подробнее</span></a>
-              <a class="hotel-reserve" href="#"><span class="hotel-reserve-text">Забронировать</span></a>
+              <a class="hotel-details" href="#">Подробнее</a>
+              <a class="hotel-reserve" href="#">Забронировать</a>
             </div>
           </div>
           <div>
@@ -161,7 +161,7 @@
             <span class="rating">Рейтинг: 8,9</span>
           </div>
         </li>
-        <li>
+        <li class="hotel-item">
           <img src="./img/catalog/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           <div>
             <h3 class="hotel-title"><a class="hotel-link-title" href="#">Villas at Poco Diablo</a></h3>
@@ -170,8 +170,8 @@
               <span class="hotel-text">От 2000 ₽</span>
             </div>
             <div class="hotel-link">
-              <a class="hotel-details" href="#"><span class="hotel-details-text">Подробнее</span></a>
-              <a class="hotel-reserve" href="#"><span class="hotel-reserve-text">Забронировать</span></a>
+              <a class="hotel-details" href="#">Подробнее</a>
+              <a class="hotel-reserve" href="#">Забронировать</a>
             </div>
           </div>
           <div>
@@ -190,13 +190,27 @@
 
       <ul class="footer-social">
         <li class="social-item">
-          <a class="social-link" href="#"><img src="./img/icon/twitter.svg" alt="twitter"></a></a>
+          <a class="social-link" href="#">
+            <svg class="social-svg" width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.95 1.14a3.1 3.1 0 013.58 1.18c.67-.23 1.33-.48 2-.7a2.34 2.34 0 01-.85 1.76c.69.17 1.3-.49 1.3-.49-.16 1-1 1.79-1.56 2.03C15.2 11.67 12.25 16.13 5.34 16H4.9c-.41 0-4.17-.46-4.9-1.89 2.27.2 3.9-.42 4.7-1.18-.97-.3-2.69-.47-2.99-2.95.35.11.57.23 1.2.12C1.7 9.25.36 8.53.44 6.33a1.9 1.9 0 001.34.47c-.7-.24-1.97-3.36-.9-4.95C2.7 3.7 4.62 5.45 8.04 5.62c.2-2.29 1.13-3.83 2.9-4.48z" />
+            </svg>
+          </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#"><img src="./img/icon/facebook.svg" alt="facebook"></a>
+          <a class="social-link" href="#">
+            <svg class="social-svg" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
+            </svg>
+          </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#"><img src="./img/icon/youtube.svg" alt="youtube"></a>
+          <a class="social-link" href="#">
+            <svg class="social-svg" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3.03 4v8L15 8 6.03 4z" />
+            </svg>
+          </a>
         </li>
       </ul>
 
