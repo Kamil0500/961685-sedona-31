@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -29,165 +29,161 @@
       </a>
     </header>
 
-    <section>
-      <h1 class="visually-hidden">Поиск гостиницы</h1>
+    <main>
+      <section>
+        <h1 class="visually-hidden">Поиск гостиницы</h1>
 
-      <form class="catalog-form" action="#" method="POST">
-        <h2 class="visually-hidden">форма поиска</h2>
+        <form class="catalog-form" action="#" method="POST">
+          <h2 class="visually-hidden">форма поиска</h2>
 
-        <div class="infastructur">
-          <h3 class="catalog-form-title title-infastructur">Инфраструктура:</h3>
-          <ul class="catalog-form-list">
-            <li class="catalog-form-item">
-              <input type="checkbox" name="infastructur" value="swim" id="checkbox_1" checked>
-              <label for="checkbox_1">Бассейн</label>
+          <div class="infastructur">
+            <h3 class="catalog-form-title title-infastructur">Инфраструктура:</h3>
+            <ul class="catalog-form-list">
+              <li class="catalog-form-item">
+                <input type="checkbox" name="infastructur" value="swim" id="checkbox_1" checked>
+                <label for="checkbox_1">Бассейн</label>
+              </li>
+              <li class="catalog-form-item">
+                <input type="checkbox" name="infastructur" value="parking" id="checkbox_2">
+                <label for="checkbox_2">Парковка</label>
+              </li>
+              <li class="catalog-form-item">
+                <input type="checkbox" name="infastructur" value="wifi" id="checkbox_3">
+                <label for="checkbox_3">Wi-Fi</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="type_of_housing">
+            <h3 class="catalog-form-title">Тип жилья:</h3>
+            <ul class="catalog-form-list">
+              <li class="catalog-form-item">
+                <input type="checkbox" name="type_of_housing" value="hotel" id="checkbox_4" checked>
+                <label for="checkbox_4">Гостиница</label>
+              </li>
+              <li class="catalog-form-item">
+                <input type="checkbox" name="type_of_housing" value="motel" id="checkbox_5" checked>
+                <label for="checkbox_5">Мотель</label>
+              </li>
+              <li class="catalog-form-item">
+                <input type="checkbox" name="type_of_housing" value="apartament" id="checkbox_6" checked>
+                <label for="checkbox_6">Апартаменты</label>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="form-cost">
+            <h3 class="cost">Стоимость в сутки (Р):</h3>
+            <div class="block-cost">
+              <label class="cost-label">От
+                <input class="cost-input" type="text" value="0" name="from">
+              </label>
+              <label class="cost-label">До
+                <input class="cost-input" type="text" value="3000" name="before">
+              </label>
+            </div>
+            <div>
+              <!--range-->
+            </div>
+            <div class="show-btn">
+              <button class="show" type="submit">Показать</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="block-found">
+          <span class="found">Найдено: 3</span>
+
+          <ul class="found-list">
+            <li class="found-item">
+              <a class="found-link" href="#">Сортировка:</a>
             </li>
-            <li class="catalog-form-item">
-              <input type="checkbox" name="infastructur" value="parking" id="checkbox_2">
-              <label for="checkbox_2">Парковка</label>
+            <li class="found-item">
+              <a class="found-link" href="#">По цене</a>
             </li>
-            <li class="catalog-form-item">
-              <input type="checkbox" name="infastructur" value="wifi" id="checkbox_3">
-              <label for="checkbox_3">Wi-Fi</label>
+            <li class="found-item">
+              <a class="found-link" href="#">По типу</a>
+            </li>
+            <li class="found-item">
+              <a class="found-link" href="#">По рейтингу</a>
+            </li>
+          </ul>
+
+          <ul class="catalog-svg-list">
+            <li class="catalog-svg-item">
+              <a class="catalog-svg-link" href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L0 10H11L5.5 0Z" />
+                </svg></a>
+            </li>
+            <li class="catalog-svg-item">
+              <a class="catalog-svg-link" href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" />
+                </svg></a>
             </li>
           </ul>
         </div>
 
-        <div class="type_of_housing">
-          <h3 class="catalog-form-title">Тип жилья:</h3>
-          <ul class="catalog-form-list">
-            <li class="catalog-form-item">
-              <input type="checkbox" name="type_of_housing" value="hotel" id="checkbox_4" checked>
-              <label for="checkbox_4">Гостиница</label>
-            </li>
-            <li class="catalog-form-item">
-              <input type="checkbox" name="type_of_housing" value="motel" id="checkbox_5" checked>
-              <label for="checkbox_5">Мотель</label>
-            </li>
-            <li class="catalog-form-item">
-              <input type="checkbox" name="type_of_housing" value="apartament" id="checkbox_6" checked>
-              <label for="checkbox_6">Апартаменты</label>
-            </li>
-          </ul>
-        </div>
-
-
-        <div class="form-cost">
-          <h3 class="cost">Стоимость в сутки (Р):</h3>
-          <div class="block-cost">
-            <label class="cost-label">От
-              <input class="cost-input" type="text" value="0" name="from">
-            </label>
-            <label class="cost-label">До
-              <input class="cost-input" type="text" value="3000" name="before">
-            </label>
-          </div>
-          <div>
-            <!--range-->
-          </div>
-          <div class="show-btn">
-            <button class="show" type="submit">Показать</button>
-          </div>
-        </div>
-      </form>
-
-      <div class="block-found">
-        <span class="found">Найдено: 3</span>
-
-        <ul class="found-list">
-          <li class="found-item">
-            <a class="found-link" href="#">Сортировка:</a>
+        <ul class="hotel-list">
+          <li class="hotel-item">
+            <img src="./img/catalog/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
+            <div class="hotel">
+              <h3 class="hotel-title"><a class="hotel-link-title" href="#">Amara Resort & Spa</a></h3>
+              <div class="hotel-item-span">
+                <span class="hotel-text">Гостиница</span>
+                <span class="hotel-text">От 4000 ₽</span>
+              </div>
+              <div class="hotel-link">
+                <a class="hotel-details" href="#">Подробнее</a>
+                <a class="hotel-reserve" href="#">Забронировать</a>
+              </div>
+            </div>
+            <div class="rating-block">
+              <div></div>
+              <span class="rating">Рейтинг: 8,5</span>
+            </div>
           </li>
-          <li class="found-item">
-            <a class="found-link" href="#">По цене</a>
+          <li class="hotel-item">
+            <img src="./img/catalog/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
+            <div class="hotel">
+              <h3 class="hotel-title"><a class="hotel-link-title" href="#">Desert Quail Inn</a></h3>
+              <div class="hotel-item-span">
+                <span class="hotel-text motel">Мотель</span>
+                <span class="hotel-text">От 3000 ₽</span>
+              </div>
+              <div class="hotel-link">
+                <a class="hotel-details" href="#">Подробнее</a>
+                <a class="hotel-reserve" href="#">Забронировать</a>
+              </div>
+            </div>
+            <div class="rating-block">
+              <div></div>
+              <span class="rating">Рейтинг: 8,9</span>
+            </div>
           </li>
-          <li class="found-item">
-            <a class="found-link" href="#">По типу</a>
-          </li>
-          <li class="found-item">
-            <a class="found-link" href="#">По рейтингу</a>
-          </li>
-          <li class="found-item">
-            <a class="found-link" href="#">По рейтингу</a>
-          </li>
-          <li class="found-item">
-            <a class="found-link" href="#">По рейтингу</a>
+          <li class="hotel-item">
+            <img src="./img/catalog/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+            <div class="hotel">
+              <h3 class="hotel-title"><a class="hotel-link-title" href="#">Villas at Poco Diablo</a></h3>
+              <div class="hotel-item-span">
+                <span class="hotel-text apartament">Апартаменты</span>
+                <span class="hotel-text">От 2000 ₽</span>
+              </div>
+              <div class="hotel-link">
+                <a class="hotel-details" href="#">Подробнее</a>
+                <a class="hotel-reserve" href="#">Забронировать</a>
+              </div>
+            </div>
+            <div class="rating-block">
+              <div></div>
+              <span class="rating">Рейтинг: 9,2</span>
+            </div>
           </li>
         </ul>
-
-        <ul class="catalog-svg-list">
-          <li class="catalog-svg-item">
-            <a class="catalog-svg-link" href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 0L0 10H11L5.5 0Z" />
-              </svg></a>
-          </li>
-          <li class="catalog-svg-item">
-            <a class="catalog-svg-link" href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 10L0 0H11" />
-              </svg></a>
-          </li>
-        </ul>
-      </div>
-
-      <ul class="hotel-list">
-        <li class="hotel-item">
-          <img src="./img/catalog/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
-          <div class="hotel">
-            <h3 class="hotel-title"><a class="hotel-link-title" href="#">Amara Resort & Spa</a></h3>
-            <div class="hotel-item-span">
-              <span class="hotel-text">Гостиница</span>
-              <span class="hotel-text">От 4000 ₽</span>
-            </div>
-            <div class="hotel-link">
-              <a class="hotel-details" href="#">Подробнее</a>
-              <a class="hotel-reserve" href="#">Забронировать</a>
-            </div>
-          </div>
-          <div class="rating-block">
-            <div></div>
-            <span class="rating">Рейтинг: 8,5</span>
-          </div>
-        </li>
-        <li class="hotel-item">
-          <img src="./img/catalog/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
-          <div class="hotel">
-            <h3 class="hotel-title"><a class="hotel-link-title" href="#">Desert Quail Inn</a></h3>
-            <div class="hotel-item-span">
-              <span class="hotel-text motel">Мотель</span>
-              <span class="hotel-text">От 3000 ₽</span>
-            </div>
-            <div class="hotel-link">
-              <a class="hotel-details" href="#">Подробнее</a>
-              <a class="hotel-reserve" href="#">Забронировать</a>
-            </div>
-          </div>
-          <div class="rating-block">
-            <div></div>
-            <span class="rating">Рейтинг: 8,9</span>
-          </div>
-        </li>
-        <li class="hotel-item">
-          <img src="./img/catalog/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-          <div class="hotel">
-            <h3 class="hotel-title"><a class="hotel-link-title" href="#">Villas at Poco Diablo</a></h3>
-            <div class="hotel-item-span">
-              <span class="hotel-text apartament">Апартаменты</span>
-              <span class="hotel-text">От 2000 ₽</span>
-            </div>
-            <div class="hotel-link">
-              <a class="hotel-details" href="#">Подробнее</a>
-              <a class="hotel-reserve" href="#">Забронировать</a>
-            </div>
-          </div>
-          <div class="rating-block">
-            <div></div>
-            <span class="rating">Рейтинг: 9,2</span>
-          </div>
-        </li>
-      </ul>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="phone">

@@ -27,25 +27,22 @@
 
 html {
   box-sizing: border-box;
+  height: auto;
 }
 
 .visually-hidden {
   display: none;
 }
 
-.page {
-  height: 100%;
-}
-
 .page-body {
   min-width: 1200px;
+  min-height: 100%;
   padding: 0;
   margin: 0;
   font-family: var(--body-fonts);
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  font-weight: normal;
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--basic-light-grey);
@@ -58,7 +55,7 @@ html {
   box-shadow: 0px 5px 15px var(--basic-light-02);
 
   display: grid;
-  min-height: 100%;
+  min-height: 100vh;
   grid-template-rows: min-content 1fr min-content;
 }
 
@@ -68,7 +65,7 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .main-header {
@@ -89,8 +86,16 @@ img {
 }
 
 .header-nav-item {
-  padding: 0 72px;
+  margin: 0 72px;
   list-style: none;
+}
+
+.header-nav-item:first-child {
+  margin-right: 60px;
+}
+
+.header-nav-item:nth-child(2) {
+  margin-right: auto;
 }
 
 .header-nav-link {
@@ -131,7 +136,7 @@ img {
 }
 
 .welcom_svg {
-  margin: 77px 371px 80px;
+  margin: 0;
 }
 
 .main-features {
@@ -165,6 +170,7 @@ img {
 .main-features-2 {
   display: grid;
   grid-template-columns: 1fr 400px;
+  min-height: 256px;
 }
 
 .main-features-block {
@@ -179,7 +185,7 @@ img {
   font-style: normal;
   font-size: 21px;
   line-height: 21px;
-  margin: 0 0 25px 0;
+  margin: 0 auto 25px auto;
 }
 
 .main-features-span {
@@ -192,14 +198,25 @@ img {
 }
 
 .title-1 {
-  display: block;
   max-width: 122px;
   margin: 0 auto 25px;
 }
 
 .title-2 {
-  display: block;
   margin: 0 auto 25px;
+  max-width: 151px;
+}
+
+.title-3 {
+  max-width: 119px;
+}
+
+.title-4 {
+  max-width: 100px;
+}
+
+.title-5 {
+  max-width: 100px;
 }
 
 .main-features-list {
@@ -215,8 +232,12 @@ img {
 
 .main-features-item {
   list-style: none;
-  padding: 60px 73px 82px;
+  padding: 60px 65px 80px 73px;
   text-align: center;
+}
+
+.main-features-item:last-child {
+  padding-top: 50px;
 }
 
 .main-features-svg {
@@ -232,7 +253,7 @@ img {
 .main-features-item-2 {
   list-style: none;
   text-align: center;
-  padding: 47px 77px 54px 96px;
+  padding: 47px 80px 54px;
 }
 
 .text-span {
@@ -285,9 +306,8 @@ img {
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr max-content;
-  grid-row: 3 / -1;
+  display: flex;
+  justify-content: space-between;
   padding: 23px 131px 36px;
 }
 
@@ -324,8 +344,10 @@ img {
 
 .footer-social {
   display: flex;
+  align-items: flex-end;
   margin: 0;
-  padding: 13px 0 0;
+  padding: 0;
+  width: 150px;
 }
 
 .social-item {
@@ -335,6 +357,14 @@ img {
 
 .social-item:last-child {
   margin-right: 0;
+}
+
+.social-link {
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
 }
 
 .social-link:hover {
@@ -348,11 +378,8 @@ img {
 .social-svg {
   fill: var(--basic-white);
   background-color: var(--basic-light-blue);
-  width: 46px;
+  width: 48px;
   height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 15px 15px;
 }
 
@@ -372,14 +399,11 @@ img {
   line-height: 26px;
   color: var(--basic-black);
   display: flex;
-  padding-top: 20px;
-}
-
-.website_by {
-  margin-right: 15px;
+  align-items: center;
 }
 
 .html-academy-svg {
+  margin: 10px 0 0 15px;
   fill: var(--basic-black);
 }
 
@@ -443,7 +467,7 @@ img {
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   color: var(--basic-white);
-  margin-bottom: 55px;
+  margin-bottom: 65px;
 }
 
 .cost-input {
@@ -528,7 +552,7 @@ img {
 .catalog-svg-list {
   display: flex;
   padding: 0;
-  margin: 0 0 0 295px;
+  margin: 0 0 0 auto;
 }
 
 .catalog-svg-item {
@@ -560,6 +584,7 @@ img {
 
 .hotel-item {
   display: flex;
+  align-items: flex-end;
   list-style: none;
   padding: 30px 71px 30px 73px;
 }
@@ -569,31 +594,27 @@ img {
 }
 
 .hotel-title {
-  margin: 0 0 10px 0;
+  margin: 0 0 7px 0;
 }
 
 .hotel-item-span {
-  margin: 0 0 15px 0;
+  margin-bottom: 15px;
 }
 
 .hotel-text {
-  margin-right: 35px;
+  margin-right: 40px;
 }
 
 .motel {
-  margin: 0 60px 0 0;
+  margin: 0 65px 0 0;
 }
 
 .apartament {
-  margin: 0 20px 0 0;
+  margin: 0 25px 0 0;
 }
 
 .hotel-text:last-child {
   margin-right: 0;
-}
-
-.hotel-details {
-  margin-right: 6px;
 }
 
 .hotel-link {
@@ -630,6 +651,7 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
   padding: 3px 17px;
+  margin-right: 6px;
 }
 
 .hotel-details:hover {
@@ -659,8 +681,8 @@ img {
 
 .rating-block {
   display: flex;
-  align-self: flex-end;
-  margin-left: 522px;
+  align-items: flex-end;
+  margin-left: auto;
 }
 
 .rating {
