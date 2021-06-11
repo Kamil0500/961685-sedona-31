@@ -36,20 +36,20 @@
         <form class="catalog-form" action="#" method="POST">
           <h2 class="visually-hidden">форма поиска</h2>
 
-          <div class="infastructur">
-            <h3 class="catalog-form-title title-infastructur">Инфраструктура:</h3>
+          <div class="infrastructure">
+            <h3 class="catalog-form-title title-infrastructure">Инфраструктура:</h3>
             <ul class="catalog-form-list">
               <li class="catalog-form-item">
-                <input type="checkbox" name="infastructur" value="swim" id="checkbox_1" checked>
-                <label for="checkbox_1">Бассейн</label>
+                <input type="checkbox" name="infrastructure" value="swim" id="checkbox_1" checked>
+                <label class="label-item" for="checkbox_1">Бассейн</label>
               </li>
               <li class="catalog-form-item">
-                <input type="checkbox" name="infastructur" value="parking" id="checkbox_2">
-                <label for="checkbox_2">Парковка</label>
+                <input type="checkbox" name="infrastructure" value="parking" id="checkbox_2">
+                <label class="label-item" for="checkbox_2">Парковка</label>
               </li>
               <li class="catalog-form-item">
-                <input type="checkbox" name="infastructur" value="wifi" id="checkbox_3">
-                <label for="checkbox_3">Wi-Fi</label>
+                <input type="checkbox" name="infrastructure" value="wi-fi" id="checkbox_3">
+                <label class="label-item" for="checkbox_3">Wi-Fi</label>
               </li>
             </ul>
           </div>
@@ -59,15 +59,15 @@
             <ul class="catalog-form-list">
               <li class="catalog-form-item">
                 <input type="checkbox" name="type_of_housing" value="hotel" id="checkbox_4" checked>
-                <label for="checkbox_4">Гостиница</label>
+                <label class="label-item" for="checkbox_4">Гостиница</label>
               </li>
               <li class="catalog-form-item">
                 <input type="checkbox" name="type_of_housing" value="motel" id="checkbox_5" checked>
-                <label for="checkbox_5">Мотель</label>
+                <label class="label-item" for="checkbox_5">Мотель</label>
               </li>
               <li class="catalog-form-item">
-                <input type="checkbox" name="type_of_housing" value="apartament" id="checkbox_6" checked>
-                <label for="checkbox_6">Апартаменты</label>
+                <input type="checkbox" name="type_of_housing" value="apartment" id="checkbox_6" checked>
+                <label class="label-item" for="checkbox_6">Апартаменты</label>
               </li>
             </ul>
           </div>
@@ -97,10 +97,10 @@
 
           <ul class="found-list">
             <li class="found-item">
-              <a class="found-link" href="#">Сортировка:</a>
+              <a class="sorting" href="#">Сортировка:</a>
             </li>
             <li class="found-item">
-              <a class="found-link" href="#">По цене</a>
+              <a class="found-link active" href="#">По цене</a>
             </li>
             <li class="found-item">
               <a class="found-link" href="#">По типу</a>
@@ -112,16 +112,14 @@
 
           <ul class="catalog-svg-list">
             <li class="catalog-svg-item">
-              <a class="catalog-svg-link" href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z" />
-                </svg></a>
+              <a class="catalog-svg-link" href="">
+                <span class="up"></span>
+              </a> 
             </li>
             <li class="catalog-svg-item">
-              <a class="catalog-svg-link" href="#"><svg class="svg-link" width="11" height="10" viewBox="0 0 11 10"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11" />
-                </svg></a>
+              <a class="catalog-svg-link" href="#">
+                <span class="down active"></span>
+              </a>
             </li>
           </ul>
         </div>
@@ -132,7 +130,7 @@
             <div class="hotel">
               <h3 class="hotel-title"><a class="hotel-link-title" href="#">Amara Resort & Spa</a></h3>
               <div class="hotel-item-span">
-                <span class="hotel-text">Гостиница</span>
+                <span class="hotel-text hostel">Гостиница</span>
                 <span class="hotel-text">От 4000 ₽</span>
               </div>
               <div class="hotel-link">
@@ -193,13 +191,13 @@
 
       <ul class="footer-social">
         <li class="social-item">
-          <a class="social-link" href="#"></a>
+          <a class="social-link link-twitter" href="#"></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#"></a>
+          <a class="social-link link-facebook" href="#"></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#"></a>
+          <a class="social-link link-youtube" href="#"></a>
         </li>
       </ul>
 
