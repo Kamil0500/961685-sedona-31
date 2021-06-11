@@ -594,6 +594,7 @@ img {
 
 .block-found {
   display: flex;
+  align-items: center;
   padding: 30px 73px;
 }
 
@@ -610,7 +611,7 @@ img {
 .found-list {
   display: flex;
   padding: 0;
-  margin: 3px 0;
+  margin: 0;
 }
 
 .found-item {
@@ -681,46 +682,36 @@ img {
   position: relative;
 }
 
-.up {
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+.catalog-svg-link::before {
+  content: "";
   width: 11px;
   height: 10px;
   background-color: var(--basic-black);
   opacity: 0.3;
   position: absolute;
   top: 0;
-  bottom: 0;
-  left: 11px;
+  left: 0;
+}
+
+.up {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 .down {
   clip-path: polygon(50% 100%, 0 0, 100% 0);
-  width: 11px;
-  height: 10px;
-  background-color: var(--basic-black);
-  opacity: 0.3;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 11px;
 }
 
-.up:hover {
+.catalog-svg-link:hover {
   background-color: var(--basic-black);
   opacity: 1;
 }
 
-.up:active {
+.catalog-svg-link:active {
   background-color: var(--basic-light-blue);
   opacity: 1;
 }
 
-.down:hover {
-  background-color: var(--basic-black);
-  opacity: 1;
-}
-
-.catalog-svg-link .active {
+.catalog-svg-link.active::before {
   background-color: var(--basic-light-blue);
   opacity: 1;
   pointer-events: none;
