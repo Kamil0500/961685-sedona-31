@@ -37,18 +37,21 @@
           <h2 class="visually-hidden">форма поиска</h2>
 
           <div class="infrastructure">
-            <h3 class="catalog-form-title title-infrastructure">Инфраструктура:</h3>
+            <h3 class="catalog-form-title  title-infrastructure">Инфраструктура:</h3>
             <ul class="catalog-form-list">
               <li class="catalog-form-item">
-                <input type="checkbox" name="infrastructure" value="swim" id="checkbox_1" checked>
+                <input class="visually-hidden input-item" type="checkbox" name="infrastructure" value="swim"
+                  id="checkbox_1" disabled checked>
                 <label class="label-item" for="checkbox_1">Бассейн</label>
               </li>
               <li class="catalog-form-item">
-                <input type="checkbox" name="infrastructure" value="parking" id="checkbox_2">
+                <input class="visually-hidden input-item" type="checkbox" name="infrastructure" value="parking"
+                  id="checkbox_2">
                 <label class="label-item" for="checkbox_2">Парковка</label>
               </li>
               <li class="catalog-form-item">
-                <input type="checkbox" name="infrastructure" value="wi-fi" id="checkbox_3">
+                <input class="visually-hidden input-item" type="checkbox" name="infrastructure" value="wi-fi"
+                  id="checkbox_3">
                 <label class="label-item" for="checkbox_3">Wi-Fi</label>
               </li>
             </ul>
@@ -58,38 +61,56 @@
             <h3 class="catalog-form-title">Тип жилья:</h3>
             <ul class="catalog-form-list">
               <li class="catalog-form-item">
-                <input type="checkbox" name="type_of_housing" value="hotel" id="checkbox_4" checked>
+                <input class="visually-hidden input-item" type="checkbox" name="type_of_housing" value="hotel"
+                  id="checkbox_4" checked>
                 <label class="label-item" for="checkbox_4">Гостиница</label>
               </li>
               <li class="catalog-form-item">
-                <input type="checkbox" name="type_of_housing" value="motel" id="checkbox_5" checked>
+                <input class="visually-hidden input-item" type="checkbox" name="type_of_housing" value="motel"
+                  id="checkbox_5" checked>
                 <label class="label-item" for="checkbox_5">Мотель</label>
               </li>
               <li class="catalog-form-item">
-                <input type="checkbox" name="type_of_housing" value="apartment" id="checkbox_6" checked>
+                <input class="visually-hidden input-item" type="checkbox" name="type_of_housing" value="apartment"
+                  id="checkbox_6" checked>
                 <label class="label-item" for="checkbox_6">Апартаменты</label>
               </li>
             </ul>
           </div>
 
 
-          <div class="form-cost">
-            <h3 class="cost">Стоимость в сутки (Р):</h3>
-            <div class="block-cost">
-              <label class="cost-label">От
-                <input class="cost-input" type="text" value="0" name="from">
-              </label>
-              <label class="cost-label">До
-                <input class="cost-input" type="text" value="3000" name="before">
-              </label>
-            </div>
-            <div>
-              <!--range-->
+          <fieldset class="filter-item">
+            <legend class="filter-item-legend">Стоимость в сутки, ₽:</legend>
+            <div class="range-filter">
+              <div class="price-controls">
+                <label class="min-price">
+                  <span class="min-price-span">от</span>
+                  <input class="min-price-input" type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  <span class="max-price-span">до</span>
+                  <input class="max-price-input" type="text" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                    width: 80%;
+                    margin-left: 0">
+                  </div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                  left: 0
+                "></div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                  left: 80%">
+                  </div>
+              </div>
             </div>
             <div class="show-btn">
               <button class="show" type="submit">Показать</button>
             </div>
-          </div>
+          </fieldset>
         </form>
 
         <div class="block-found">
@@ -135,7 +156,17 @@
               </div>
             </div>
             <div class="rating-block">
-              <div></div>
+              <div class="rating-star">
+                <fieldset class="fieldset-star">
+                  <div class="star-group">
+                    <input class="input-star" type="radio" name="star" value="1">
+                    <input class="input-star" type="radio" name="star" value="2">
+                    <input class="input-star" type="radio" name="star" value="3">
+                    <input class="input-star" type="radio" name="star" value="4">
+                    <input class="input-star" type="radio" name="star" value="5">
+                  </div>
+                </fieldset>
+              </div>
               <span class="rating">Рейтинг: 8,5</span>
             </div>
           </li>
@@ -199,7 +230,7 @@
 
       <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
         <span class="website_by">website by</span>
-        <span>
+        <span class="html-academy-span">
           <svg class="html-academy-svg" width="115" height="34" viewBox="0 0 115 34" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
@@ -236,6 +267,7 @@
         </span>
       </a>
     </footer>
+  </div>
 </body>
 
 </html>
