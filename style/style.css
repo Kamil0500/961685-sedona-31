@@ -363,7 +363,7 @@ img {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 23px 130px 35px 152px;
+  padding: 23px 130px 35px 136px;
 }
 
 .footer--main {
@@ -506,10 +506,6 @@ img {
 }
 
 .form {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 568px;
   font-style: normal;
   font-weight: bold;
@@ -519,9 +515,28 @@ img {
   background-color: var(--basic-white);
   box-shadow: var(--basic-dark-01);
   padding: 55px;
-
+  pointer-events: all;
   display: flex;
   flex-direction: column;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.form.is-open {
+  transform: translateY(0);
+}
+
+.form-wrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
 .form-arrival {
@@ -586,6 +601,7 @@ img {
   width: 38px;
   height: 38px;
   padding: 0;
+  cursor: pointer;
 }
 
 .btn-calendar:hover path {
@@ -616,6 +632,14 @@ img {
   border: none;
 }
 
+.adults-input:hover {
+  background-color: var(--basic-smoky-white);
+}
+
+.adults-input:focus {
+  background-color: var(--basic-white);
+}
+
 .children-input {
   margin-left: 35px;
   padding: 9px 35px;
@@ -623,6 +647,14 @@ img {
   text-align: center;
   background-color: var(--basic-light-grey);
   border: none;
+}
+
+.children-input:hover {
+  background-color: var(--basic-smoky-white);
+}
+
+.children-input:focus {
+  background-color: var(--basic-white);
 }
 
 .btn-minus-adults {
@@ -634,6 +666,7 @@ img {
   border: none;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-minus-adults:hover rect {
@@ -653,6 +686,7 @@ img {
   border: none;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-plus-adults:hover path {
@@ -676,6 +710,7 @@ img {
   border: none;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-minus-children:hover rect {
@@ -695,6 +730,7 @@ img {
   border: none;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-plus-children:hover path {
@@ -715,6 +751,7 @@ img {
   padding: 16px 182px;
   border: none;
   color: var(--basic-white);
+  cursor: pointer;
 }
 
 .btn-form-search:hover {
@@ -1163,9 +1200,9 @@ img {
 
 .star-group {
   position: relative;
-  width: 95px;
+  width: 76px;
   height: 17px;
-  margin-left: 12px;
+  margin-left: 31px;
 }
 
 .input-star {
@@ -1178,6 +1215,9 @@ img {
   left: 0;
   width: 19px;
   height: 17px;
+}
+
+.input-star:checked {
   background-image: url("../img/icon/star.svg");
 }
 
