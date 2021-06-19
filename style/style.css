@@ -45,7 +45,6 @@ html {
   margin: -1px;
   border: 0;
   padding: 0;
-  white-space: 0;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -1062,6 +1061,7 @@ img {
 
 .down {
   clip-path: polygon(50% 100%, 0 0, 100% 0);
+  pointer-events: none;
 }
 
 .catalog-svg-link:hover {
@@ -1091,7 +1091,7 @@ img {
   flex-wrap: wrap;
   align-items: flex-end;
   list-style: none;
-  padding: 26px 71px 30px 73px;
+  padding: 26px 71px 29px 73px;
 }
 
 .hotel {
@@ -1212,15 +1212,15 @@ img {
 }
 
 .rating-star-two {
-  width: 48px;
+  width: 42px;
 }
 
 .rating-star-three {
-  width: 72px;
+  width: 66px;
 }
 
 .rating-star-four {
-  width: 92px;
+  width: 91px;
 }
 
 .rating {
