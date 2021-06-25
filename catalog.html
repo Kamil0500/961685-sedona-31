@@ -2,15 +2,16 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HTML Academy: Седона" />
   <title>Каталог</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="./style/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="./style/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/style.css" />
 </head>
 
 <body class="page-body">
@@ -18,14 +19,22 @@
     <header class="main-header">
       <nav class="main-header-nav">
         <ul class="header-nav-list">
-          <li class="header-nav-item"><a class="header-nav-link" href="#">Информация</a></li>
-          <li class="header-nav-item"><a class="header-nav-link" href="#">Фото и видео</a></li>
-          <li class="header-nav-item"><a class="header-nav-link" href="#">Карта штата</a></li>
-          <li class="header-nav-item"><a class="header-nav-link active" href="#">Гостиницы</a></li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#">Информация</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#">Фото и видео</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#">Карта штата</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link active" href="#">Гостиницы</a>
+          </li>
         </ul>
       </nav>
-      <a href="./index.html" class="main-header-logo">
-        <img src="./img/logo.svg" width="138" height="70" alt="Sedona">
+      <a href="./index.html" class="main-header-logo" aria-label="Переход на главную страницу">
+        <img src="./img/logo.svg" width="138" height="70" alt="Sedona" />
       </a>
     </header>
 
@@ -37,21 +46,23 @@
           <h2 class="visually-hidden">форма поиска</h2>
 
           <div class="infrastructure">
-            <h3 class="catalog-form-title  title-infrastructure">Инфраструктура:</h3>
+            <h3 class="catalog-form-title title-infrastructure">
+              Инфраструктура:
+            </h3>
             <ul class="catalog-form-list">
               <li class="catalog-form-item">
                 <input class="visually-hidden input-item" type="checkbox" name="infrastructure" value="swim"
-                  id="checkbox_1" checked>
+                  id="checkbox_1" checked />
                 <label class="label-item" for="checkbox_1">Бассейн</label>
               </li>
               <li class="catalog-form-item">
                 <input class="visually-hidden input-item" type="checkbox" name="infrastructure" value="parking"
-                  id="checkbox_2">
+                  id="checkbox_2" />
                 <label class="label-item" for="checkbox_2">Парковка</label>
               </li>
               <li class="catalog-form-item">
                 <input class="visually-hidden input-item" type="checkbox" name="infrastructure" value="wi-fi"
-                  id="checkbox_3">
+                  id="checkbox_3" />
                 <label class="label-item" for="checkbox_3">Wi-Fi</label>
               </li>
             </ul>
@@ -62,48 +73,44 @@
             <ul class="catalog-form-list">
               <li class="catalog-form-item">
                 <input class="visually-hidden input-item" type="checkbox" name="type_of_housing" value="hotel"
-                  id="checkbox_4" checked>
+                  id="checkbox_4" checked />
                 <label class="label-item" for="checkbox_4">Гостиница</label>
               </li>
               <li class="catalog-form-item">
                 <input class="visually-hidden input-item" type="checkbox" name="type_of_housing" value="motel"
-                  id="checkbox_5" checked>
+                  id="checkbox_5" checked />
                 <label class="label-item" for="checkbox_5">Мотель</label>
               </li>
               <li class="catalog-form-item">
                 <input class="visually-hidden input-item" type="checkbox" name="type_of_housing" value="apartment"
-                  id="checkbox_6" checked>
+                  id="checkbox_6" checked />
                 <label class="label-item" for="checkbox_6">Апартаменты</label>
               </li>
             </ul>
           </div>
 
-
           <fieldset class="filter-item">
-            <legend class="filter-item-legend">Стоимость в&nbsp;сутки, ₽:</legend>
+            <legend class="filter-item-legend">
+              Стоимость в&nbsp;сутки, ₽:
+            </legend>
             <div class="range-filter">
               <div class="price-controls">
                 <label class="min-price">
                   <span class="min-price-span">от</span>
-                  <input class="min-price-input" type="text" name="min-price" value="0">
+                  <input class="min-price-input" type="text" name="min-price" value="0" />
                 </label>
                 <label class="max-price">
                   <span class="max-price-span">до</span>
-                  <input class="max-price-input" type="text" name="max-price" value="3000">
+                  <input class="max-price-input" type="text" name="max-price" value="3000" />
                 </label>
               </div>
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="
-                    width: 80%;
-                    margin-left: 0">
-                  </div>
+                  <div class="bar" style="width: 80%; margin-left: 0"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" style="
-                  left: 0
-                "></div>
-                <div class="toggle toggle-max" tabindex="0" style="
-                  left: 79.5%">
+                <div class="toggle toggle-min" tabindex="0" style="left: 0" aria-label="Минимальное значение цены">
+                </div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 79.5%" aria-label="Максимальное значение цены">
                 </div>
               </div>
             </div>
@@ -133,19 +140,21 @@
 
           <ul class="catalog-svg-list">
             <li class="catalog-svg-item">
-              <a class="catalog-svg-link up" href=""></a>
+              <a class="catalog-svg-link up" href="#" aria-label="перейти по списку вверх"></a>
             </li>
             <li class="catalog-svg-item">
-              <a class="catalog-svg-link down active" href="#"></a>
+              <a class="catalog-svg-link down active" href="#" aria-label="перейти по списку вниз"></a>
             </li>
           </ul>
         </div>
 
         <ul class="hotel-list">
           <li class="hotel-item">
-            <img src="./img/catalog/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
+            <img src="./img/catalog/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa" />
             <div class="hotel">
-              <h3 class="hotel-title"><a class="hotel-link-title" href="#">Amara Resort &amp;&nbsp;Spa</a></h3>
+              <h3 class="hotel-title">
+                <a class="hotel-link-title" href="#">Amara Resort &amp;&nbsp;Spa</a>
+              </h3>
               <div class="hotel-item-span">
                 <span class="hotel-text hostel">Гостиница</span>
                 <span class="hotel-text">От 4000 ₽</span>
@@ -161,9 +170,11 @@
             </div>
           </li>
           <li class="hotel-item">
-            <img src="./img/catalog/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
+            <img src="./img/catalog/desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn" />
             <div class="hotel">
-              <h3 class="hotel-title"><a class="hotel-link-title" href="#">Desert Quail Inn</a></h3>
+              <h3 class="hotel-title">
+                <a class="hotel-link-title" href="#">Desert Quail Inn</a>
+              </h3>
               <div class="hotel-item-span">
                 <span class="hotel-text motel">Мотель</span>
                 <span class="hotel-text">От 3000 ₽</span>
@@ -179,9 +190,11 @@
             </div>
           </li>
           <li class="hotel-item">
-            <img src="./img/catalog/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+            <img src="./img/catalog/villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo" />
             <div class="hotel">
-              <h3 class="hotel-title"><a class="hotel-link-title" href="#">Villas at&nbsp;Poco Diablo</a></h3>
+              <h3 class="hotel-title">
+                <a class="hotel-link-title" href="#">Villas at&nbsp;Poco Diablo</a>
+              </h3>
               <div class="hotel-item-span">
                 <span class="hotel-text apartment">Апартаменты</span>
                 <span class="hotel-text">От 2000 ₽</span>
@@ -203,28 +216,22 @@
     <footer class="footer">
       <div class="phone">
         <span class="visit-sedona">#visitsedona</span>
-        <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
+        <a class="phone-link" href="tel:+78005558628" aria-label="Позвонить в компанию">+7 800 555-86-28</a>
       </div>
 
       <ul class="footer-social">
         <li class="social-item">
-          <a class="social-link link-twitter" href="#">
-            <span class="visually-hidden">twitter</span>
-          </a>
+          <a class="social-link link-twitter" href="#" aria-label="Мы в твиттер"></a>
         </li>
         <li class="social-item">
-          <a class="social-link link-facebook" href="#">
-            <span class="visually-hidden">facebook</span>
-          </a>
+          <a class="social-link link-facebook" href="#" aria-label="Мы в фэйсбук"></a>
         </li>
         <li class="social-item">
-          <a class="social-link link-youtube" href="#">
-            <span class="visually-hidden">youtube</span>
-          </a>
+          <a class="social-link link-youtube" href="#" aria-label="Мы в ютуб"></a>
         </li>
       </ul>
 
-      <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт htmlacademy">
         <span class="website_by">website by</span>
         <span class="html-academy-span">
           <svg class="html-academy-svg" width="115" height="34" viewBox="0 0 115 34" fill="none"

@@ -5,10 +5,11 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HTML Academy: Седона" />
   <title>HTML Academy: Седона</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="stylesheet" href="./style/normalize.css" />
+  <link rel="stylesheet" href="./style/normalize.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style/style.css" />
 </head>
@@ -32,9 +33,9 @@
           </li>
         </ul>
       </nav>
-      <a class="main-header-logo">
-        <img class="logo" src="./img/logo.svg" width="138" height="70" alt="Sedona" />
-      </a>
+      <span class="main-header-logo">
+        <img class="logo" src="./img/logo.svg" width="138" height="70" alt="Логотип сайта Sedona" />
+      </span>
     </header>
 
     <main class="main">
@@ -64,7 +65,7 @@
               своя жизнь
             </p>
           </div>
-          <img src="./img/image.jpg" width="800" height="256" alt="городок Седона" />
+          <img src="./img/image.jpg" width="800" height="256" alt="фото городка Седона" />
         </div>
 
         <ul class="features-list">
@@ -90,7 +91,7 @@
         </ul>
 
         <div class="main-features-two">
-          <img src="./img/image_1.jpg" width="800" height="256" alt="Мост дьявола" />
+          <img src="./img/image_1.jpg" width="800" height="256" alt="фото Мост дьявола" />
           <div class="main-features-block">
             <h3 class="title">Там есть мост дьявола</h3>
             <span class="main-features-span">&mdash;&nbsp;&#8470;&nbsp;2 &mdash;</span>
@@ -131,7 +132,9 @@
 
         <span class="form-interested">Заинтересовались?</span>
         <p class="form-search-text">
-          Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие&nbsp;предложения гостиниц в&nbsp;седоне
+          Укажите предполагаемые даты поездки,
+          и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие&nbsp;предложения
+          гостиниц в&nbsp;седоне
         </p>
         <a class="form-search-link" href="#">поиск гостиницы в седоне</a>
 
@@ -139,7 +142,7 @@
           <img class="map" src="./img/map.png" width="1200" height="593" alt="Карта городка Седона" />
 
           <div class="form-wrapper">
-            <form class="form is-open" action="#" method="POST">
+            <form class="form is-open" action="https://echo.htmlacademy.ru/" method="POST">
               <div class="form-selection">
                 <div class="form-arrival">
                   <label class="arrival-label" for="arrival">Дата заезда:</label>
@@ -157,7 +160,7 @@
                 </div>
                 <div class="form-exit">
                   <label class="exit-label" for="exit">Дата выезда:</label>
-                  <input class="exit-input" type="text" id="exit" name="data" value="4 июля 2017" />
+                  <input class="exit-input" type="text" id="exit" name="data" value="4 июля 2017"  />
                   <button class="btn-calendar" type="button" aria-label="выбрать дату выезда">
                     <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -173,7 +176,7 @@
               <div class="form-people">
                 <div class="adults-people">
                   <label class="adults-label" for="adults">Взрослые:</label>
-                  <input class="adults-input" type="text" name="adults" id="adults" value="2" />
+                  <input class="adults-input" type="text" name="adults" id="adults" value="2"  />
                   <button class="btn-minus-adults" type="button" aria-label="уменьшить количество взрослых">
                     <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect width="12" height="3" fill="#A9A9A9" />
@@ -214,28 +217,22 @@
     <footer class="footer footer--main">
       <div class="phone">
         <span class="visit-sedona">#visitsedona</span>
-        <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
+        <a class="phone-link" href="tel:+78005558628" aria-label="Позвонить в компанию">+7 800 555-86-28</a>
       </div>
 
       <ul class="footer-social">
         <li class="social-item">
-          <a class="social-link link-twitter" href="#">
-            <span class="visually-hidden">twitter</span>
-          </a>
+          <a class="social-link link-twitter" href="#" aria-label="Мы в твиттер"></a>
         </li>
         <li class="social-item">
-          <a class="social-link link-facebook" href="#">
-            <span class="visually-hidden">facebook</span>
-          </a>
+          <a class="social-link link-facebook" href="#" aria-label="Мы в фэйсбук"></a>
         </li>
         <li class="social-item">
-          <a class="social-link link-youtube" href="#">
-            <span class="visually-hidden">youtube</span>
-          </a>
+          <a class="social-link link-youtube" href="#" aria-label="Мы в ютуб"></a>
         </li>
       </ul>
 
-      <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт htmlacademy">
         <span class="website_by">website by</span>
         <span class="html-academy-span">
           <svg class="html-academy-svg" width="115" height="34" viewBox="0 0 115 34" fill="none"
