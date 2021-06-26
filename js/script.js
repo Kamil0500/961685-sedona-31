@@ -22,6 +22,8 @@ if (form) {
   form.addEventListener('submit', (e) => {
     if (!checkFormValidity()) {
       e.preventDefault();
+      form.classList.remove('error');
+      form.offsetWidth = form.offsetWidth;
       form.classList.add('error');
     }
   });
