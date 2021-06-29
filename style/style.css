@@ -237,7 +237,7 @@ img {
 
 .main-features-span {
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 
 .main-features-text {
@@ -253,7 +253,7 @@ img {
 
 .main-features-item {
   list-style: none;
-  padding: 160px 55px 81px 55px;
+  padding: 160px 55px 79px 55px;
   text-align: center;
   position: relative;
 }
@@ -310,10 +310,9 @@ img {
   position: relative;
   font-size: 30px;
   line-height: 24px;
-
   font-weight: 700;
   text-align: center;
-  padding-top: 58px;
+  padding-top: 55px;
 }
 
 .form-interested {
@@ -358,10 +357,10 @@ img {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 23px 131px 35px 153px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 52px 38px 54px;
+  align-items: end;
 }
 
 .footer--main {
@@ -376,32 +375,37 @@ img {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  max-width: 190px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 0;
 }
 
 .footer-social {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 16px -6px -6px 14px;
+  gap: 6px;
   padding: 0;
-  max-width: 360px;
+  margin: 0;
 }
 
 .social-item {
   list-style: none;
-  margin: 0 6px 6px 0;
 }
 
 .social-link {
-  display: block;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: var(--basic-light-blue);
+}
+
+.social-link svg {
+  fill: var(--basic-white);
 }
 
 .social-link:hover {
@@ -412,57 +416,13 @@ img {
   background-color: var(--basic-dark-blue);
 }
 
-.link-twitter::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/icon/twitter.svg");
-  top: 30%;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 17px;
-  height: 16px;
-}
-
-.link-facebook::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/icon/facebook.svg");
-  top: 25%;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 12px;
-  height: 22px;
-}
-
-.link-youtube::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/icon/youtube.svg");
-  top: 30%;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 16px;
-}
-
-.link-youtube:active::before {
-  opacity: 0.3;
-}
-
-.link-facebook:active::before {
-  opacity: 0.3;
-}
-
-.link-twitter:active::before {
+.social-link:active svg {
   opacity: 0.3;
 }
 
 .visit-sedona {
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 0 12px 0;
 }
 
 .phone-link {
@@ -478,7 +438,7 @@ img {
 }
 
 .website_by {
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .html-academy {
@@ -488,6 +448,8 @@ img {
   color: var(--basic-black);
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 .html-academy-span {
@@ -515,7 +477,7 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-white);
   box-shadow: var(--basic-dark-01);
-  padding: 55px;
+  padding: 56px 55px 56px 55px;
   pointer-events: all;
   display: flex;
   flex-direction: column;
@@ -813,7 +775,7 @@ img {
   background-color: var(--basic-light-blue);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 26px 62px 8px 72px;
+  padding: 26px 66px 8px 72px;
 }
 
 .infrastructure {
@@ -869,7 +831,7 @@ img {
 
 .filter-item {
   color: var(--basic-white);
-  margin: 0 0 0 8px;
+  margin: 0 0 0 7px;
   padding: 0;
   border: none;
 }
@@ -993,7 +955,7 @@ img {
 .block-found {
   display: flex;
   align-items: center;
-  padding: 24px 62px 30px 74px;
+  padding: 26px 62px 30px 74px;
 }
 
 .found {
@@ -1007,8 +969,10 @@ img {
 
 .found-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  max-width: 70%;
 }
 
 .found-item {
@@ -1060,8 +1024,10 @@ img {
 
 .catalog-svg-list {
   display: flex;
-  margin: 10px 0 0 auto;
+  flex-wrap: wrap;
+  margin: 9px 0 0 auto;
   padding: 0;
+  max-width: 100px;
 }
 
 .catalog-svg-item {
@@ -1122,7 +1088,13 @@ img {
   display: flex;
   align-items: flex-end;
   list-style: none;
-  padding: 26px 71px 29px 73px;
+  padding: 24px 71px 29px 73px;
+  border-top: 1px solid var(--basic-gainsborough);
+}
+
+.hotel-item:last-child {
+  padding: 24px 71px 31px 73px;
+  border-bottom: 1px solid var(--basic-gainsborough);
 }
 
 .hotel {
@@ -1131,7 +1103,7 @@ img {
 }
 
 .hotel-title {
-  margin: 0 0 7px 0;
+  margin: 0 0 7px 2px;
 }
 
 .hotel-item-span {
@@ -1153,6 +1125,8 @@ img {
 
 .hotel-link {
   display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .hotel-link-title {
@@ -1185,7 +1159,6 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
   padding: 3px 17px;
-  margin-right: 6px;
   max-width: 120px;
 }
 
@@ -1203,7 +1176,6 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-light-brown);
   padding: 3px 17px;
-  margin-right: 6px;
   max-width: 146px;
 }
 
